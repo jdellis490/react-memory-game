@@ -41,7 +41,7 @@ h1 {
   animation: 2s hideCard linear;
 }
 @keyframes hideCard{
-  0%{
+  0%, 70%{
     transform: rotateY(0);
   }
   100%{
@@ -51,10 +51,11 @@ h1 {
 .card img {
   max-width: 90%;
   max-height: 90%;
+  transform: scale(0);
   animation: 2s hideImage linear;
 }
 @keyframes hideImage{
-  0%{
+  0%, 70%{
     transform: scale(1);
   }
   100%{
