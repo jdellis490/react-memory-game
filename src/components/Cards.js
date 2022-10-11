@@ -4,23 +4,23 @@ import Card from './Card'
 
 const Cards = () => {
     const [items, setItems] = useState([
-        { id: 1, img: '', stat: ''},
-        { id: 1, img: '', stat: ''},
-        { id: 2, img: '', stat: ''},
-        { id: 2, img: '', stat: ''},
-        { id: 3, img: '', stat: ''},
-        { id: 3, img: '', stat: ''},
-        { id: 4, img: '', stat: ''},
-        { id: 4, img: '', stat: ''},
-        { id: 5, img: '', stat: ''},
-        { id: 5, img: '', stat: ''},
-        { id: 6, img: '', stat: ''},
-        { id: 6, img: '', stat: ''},
-        { id: 7, img: '', stat: ''},
-        { id: 7, img: '', stat: ''},
-        { id: 8, img: '', stat: ''},
-        { id: 8, img: '', stat: ''},
-    ])
+        { id: 1, img: '/images/Aang.webp', stat: ''},
+        { id: 1, img: '/images/Aang.webp', stat: ''},
+        { id: 2, img: '/images/Avatar_Kyoshi.webp', stat: ''},
+        { id: 2, img: '/images/Avatar_Kyoshi.webp', stat: ''},
+        { id: 3, img: '/images/Azula.webp', stat: ''},
+        { id: 3, img: '/images/Azula.webp', stat: ''},
+        { id: 4, img: '/images/Iroh.webp', stat: ''},
+        { id: 4, img: '/images/Iroh.webp', stat: ''},
+        { id: 5, img: '/images/Katara.webp', stat: ''},
+        { id: 5, img: '/images/Katara.webp', stat: ''},
+        { id: 6, img: '/images/Sokka.webp', stat: ''},
+        { id: 6, img: '/images/Sokka.webp', stat: ''},
+        { id: 7, img: '/images/Toph_Beifong.webp', stat: ''},
+        { id: 7, img: '/images/Toph_Beifong.webp', stat: ''},
+        { id: 8, img: '/images/Zuko.webp', stat: ''},
+        { id: 8, img: '/images/Zuko.webp', stat: ''},
+    ].sort(() => Math.random() - 0.5))
   return (
     <div className="container">
         { items.map((item, index) => (
