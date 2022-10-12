@@ -21,10 +21,17 @@ const Cards = () => {
         { id: 8, img: '/images/Zuko.webp', stat: ''},
         { id: 8, img: '/images/Zuko.webp', stat: ''},
     ].sort(() => Math.random() - 0.5))
+
+    function handleClick(id){
+      items[id].stat = 'active'
+      setItems([...items])
+    }
+
+    
   return (
     <div className="container">
         { items.map((item, index) => (
-            <Card key={index} item={item}/>
+            <Card key={index} item={item} id={index} handleClick={handleClick}/>
         ))}
     </div>
   )

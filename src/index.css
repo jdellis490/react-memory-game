@@ -62,3 +62,19 @@ h1 {
     transform: scale(0);
   }
 }
+
+.card.active {
+  transform: rotateY(0);
+}
+
+.card.correct {
+  background-color: rgb(95, 206, 95);
+}
+
+.card.wrong {
+  background-color: rgb(233, 51, 51);
+}
+
+.card.active img {
+  transform: scale(1);
+}
