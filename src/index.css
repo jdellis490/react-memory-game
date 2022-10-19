@@ -39,6 +39,7 @@ h1 {
   border-radius: 5px;
   transform: rotateY(180deg);
   animation: 2s hideCard linear;
+  transition: transform 0.5s;
 }
 @keyframes hideCard{
   0%, 70%{
@@ -51,6 +52,7 @@ h1 {
 .card img {
   max-width: 90%;
   max-height: 90%;
+  transition: transform 0.5s;
   transform: scale(0);
   animation: 2s hideImage linear;
 }
