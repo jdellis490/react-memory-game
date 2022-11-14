@@ -1,9 +1,12 @@
 import Cards from "./components/Cards";
+import Header from "./components/Header";
+import { Timer } from "./components/Timer";
 
 function App() {
   return (
     <div className="App">
-      <h1>ATLA Memory Game</h1>
+      <Header />
+      <Timer />
       <Cards />
     </div>
   );

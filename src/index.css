@@ -15,11 +15,12 @@ body {
   align-items: center;
 }
 
-h1 {
+.header {
   text-align: center;
-  margin-bottom: 40px;
+  margin: 35px;
   color: aliceblue;
-
+  font-size: 50px;
+  font-weight: bold;
 }
 
 .container {
@@ -79,4 +80,15 @@ h1 {
 
 .card.active img {
   transform: scale(1);
+}
+
+.timekeeper {
+  justify-content: space-between;
+  align-items: center;
+  max-width: 500px;
+  margin: 30px auto;
+  min-height: 20px;
+  border: 1px solid black;
+  padding: 20px;
+  border-radius: 5px;
 }
