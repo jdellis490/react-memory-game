@@ -1,8 +1,8 @@
 import React, { useEffect, useState } from "react";
 
 export const Timer = () => {
-    const [isActive, setIsActive] = useState(false);
-    const [seconds, setSeconds] = useState(0);
+    let [isActive, setIsActive] = useState(false);
+    let [seconds, setSeconds] = useState(0);
 
     useEffect(() => {
         let timer = null;
@@ -15,13 +15,19 @@ export const Timer = () => {
             clearInterval(timer);
         };
     });
-
+    
+    const handleReset = () => {
+     console.log('Reset')
+     setSeconds(seconds = 0);
+     setIsActive(isActive = false);
+     };
+    
   return (
     <div className="timekeeper">
       Timer: {seconds}
       <br />
         <button className="btn btn-block" onClick={()=>{setIsActive(true)}}>Start</button>
-        <button className="btn-reset btn-block">Reset</button>      
+        <button className="btn-reset btn-block" onClick={handleReset}>Reset</button>      
     </div>
   );
 };
