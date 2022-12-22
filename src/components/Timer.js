@@ -1,4 +1,5 @@
 import React, { useEffect, useState } from "react";
+import Cards from "./Cards";
 
 export const Timer = () => {
     let [isActive, setIsActive] = useState(false);
@@ -20,7 +21,7 @@ export const Timer = () => {
      console.log('Reset')
      setSeconds(seconds = 0);
      setIsActive(isActive = false);
-     };
+    };
     
   return (
     <div className="timekeeper">

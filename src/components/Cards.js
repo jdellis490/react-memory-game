@@ -57,7 +57,7 @@ const Cards = () => {
   return (
     <div className="container">
       {items.map((item, index) => (
-        <Card key={index} item={item} id={index} handleClick={handleClick} />
+        <Card key={index} item={item} id={index} handleClick={handleClick}/>
       ))}
     </div>
   )
