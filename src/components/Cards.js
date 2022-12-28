@@ -25,7 +25,7 @@ const Cards = () => {
   const [previous, setPrevious] = useState(-1)
 
   function checkCard(card) {
-    if (items[card].id == items[previous].id) {
+    if (items[card].id === items[previous].id) {
       items[card].stat = 'correct'
       items[previous].stat = 'correct'
       setItems([...items])
